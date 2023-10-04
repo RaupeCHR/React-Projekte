@@ -1,13 +1,56 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* TodoList.css */
+.container {
+  width: fit-content; /* Breite des App-Bereichs anpassen */
+  margin: 0 auto; /* Zentriert den App-Bereich auf der Seite */
+  padding: 20px; /* Innenabstand für den App-Bereich */
+  background-color: #ebf0a9; /* Hintergrundfarbe für den App-Bereich */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  width: fit-content;
+  background-color: rgba(143, 188, 143, 0.438);
+  font-size: 24px; /* Größe der Überschrift anpassen */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: midnightblue;
 }
+
+.todo-list {
+  margin-top: 20px; /* Abstand zwischen Überschrift und Todos */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none; /* Entfernt Aufzählungszeichen bei der Todo-Liste */
+  padding: 0;
+}
+
+li {
+  width: 70%;
+  background-color: bisque;
+  padding: 8px 0; /* Innenabstand für jedes Todo-Element anpassen */
+  cursor: pointer; /* Zeiger-Cursor für anklickbare Todos */
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px; /* Abstand zwischen Eingabefeld und Buttons */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(226, 90, 12);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(32, 112, 30, 0.295);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
